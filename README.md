@@ -8,7 +8,7 @@
 - Bcrypt(stable)
  
 <h1>How to initialize this application.</h1>
-<p>* If you already have Python 3 and pip installed...</p>
+<p>If you already have Python 3 and pip installed...</p>
 <h1>Installing Flask:</h1>
 <code>$ pip install flask</code>
 <h1>Installing Flask-SQLAlchemy:</h1>
@@ -16,5 +16,6 @@
 <h1>Installing Bcrypt:</h1>
 <code>$ pip install bcrypt</code>
 <h1>Running the application(on the main folder where is app.py):</h1>
-<p>** App will start for default in <strong>127.0.0.1:5000</strong></p>
 <code>$ flask run</code>
+<br>
+<p>** App will start for default in <strong>127.0.0.1:5000</strong></p>
