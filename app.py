@@ -33,8 +33,8 @@ def login():
                     
     return render_template('login.html')
 
-@app.route('/signin', methods=['GET','POST'])
-def signin():    
+@app.route('/signup', methods=['GET','POST'])
+def signup():    
     if request.method == 'POST':
         if not request.form['username'] or not request.form['password']:
             print('Please, enter all required data.')
@@ -47,7 +47,7 @@ def signin():
             
             return redirect(url_for('login'))
          
-    return render_template('signin.html')
+    return render_template('signup.html')
 
 if __name__ == '__main__':    
     app.run()
