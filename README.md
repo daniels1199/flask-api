@@ -1,4 +1,4 @@
-# flask-login-api
+# Flask Login API
 
 <h1>Requirements:</h1>
 
