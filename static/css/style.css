@@ -1,23 +1,63 @@
 body{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-color: black
 }
 
-input{
-    width: 80%;
+h1, h2{
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ color: aliceblue;
+}
+  
+::placeholder {
+    color: aliceblue !important;
+    opacity: .6 !important;
+    padding-inline-start: 15px;
+  }
+
+.user{
+    position: relative;
     margin: 2%;
 }
 
+.user i{
+    margin-top: 10px;
+    margin-left: 8px;
+    position: absolute;
+    color: aliceblue;
+    opacity: .6;
+
+}
+
+.passwd{
+    position: relative;
+    margin: 2%;
+}
+
+.passwd i{
+    margin-top: 10px;
+    margin-left: 8px;
+    position: absolute;
+    color: aliceblue;
+    opacity: .6;
+
+}
 
 div{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 30%;
-    padding: 5%;
-    border-radius: 8%;
-    background-color: #eee;
+    align-content: center;
+    padding: 2% 4%;
     text-align: center;
+}
+
+.form{
+    margin-top: 20%;
+}
+
+.btn{
+    margin-top: 5%;
+    width: 60%;
+    align-self: center;
 }
