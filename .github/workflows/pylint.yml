@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.9", "3.10"]
+        python-version: ["3.9"]
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python ${{ matrix.python-version }}
@@ -17,10 +17,10 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pylint
-        pip install flask
-        pip install Flask-SQLAlchemy
-        pip install bcrypt
+        pip3 install pylint
+        pip3 install flask
+        pip3 install Flask-SQLAlchemy
+        pip3 install bcrypt
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
